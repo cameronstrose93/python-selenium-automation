@@ -32,5 +32,5 @@ sleep(4)
 
 # verify search results
 assert 'Sign in' in driver.find_element(By.XPATH, "//h1[@class='a-spacing-small']").text
-assert 'Email' in driver.find_element(By.XPATH, "//label[@for='ap_email']").text
+assert driver.find_element(By.ID,"ap_email").is_displayed()
 print('Test Passed')
