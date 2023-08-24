@@ -2,13 +2,7 @@ from selenium.webdriver.common.by import By
 from behave import given, when, then
 from time import sleep
 
-SEARCH_INPUT = (By.NAME, 'q')
-SEARCH_SUBMIT = (By.NAME, 'btnK')
-
-
-@given('Open Amazon page')
-def open_amazon(context):
-    context.driver.get('https://www.amazon.com/')
+CART_BUTTON = (By.CSS_SELECTOR, "#nav-cart")
 
 
 @when('Click on Return and Orders icon')
@@ -26,7 +20,7 @@ def verify_signin(context):
 
 @when('Click on cart icon')
 def click_cart_icon(context):
-    context.driver.find_element(By.CSS_SELECTOR, ".nav-cart-icon").click()
+    context.driver.find_element(*CART_BUTTON).click()
     sleep(1)
 
 
