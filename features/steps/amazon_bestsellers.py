@@ -15,5 +15,7 @@ def click_bestsellers_icon(context):
 @then('Verify there are Five Links')
 def verify_five_links(context):
     links = context.driver.find_elements(*FIVE_LINKS)
+    assert len(links) == 5
     print(links)
     print(f'Total links: {len(links)}')
+
