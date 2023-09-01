@@ -8,3 +8,10 @@ def open_amazon(context):
     sleep(1)
     context.driver.refresh()
 
+
+@given('Open Amazon Hat Page')
+def open_hat_page(context):
+    context.driver.get('https://a.co/d/bnhB50Y')
+    sleep(1)
+    context.driver.refresh()
+

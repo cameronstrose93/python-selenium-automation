@@ -6,7 +6,7 @@ from time import sleep
 
 SEARCH_BAR = (By.CSS_SELECTOR, "#twotabsearchtextbox")
 SEARCH_BUTTON = (By. CSS_SELECTOR, "#nav-search-submit-button")
-CLICK_PRODUCT = (By.CSS_SELECTOR, "[data-asin='B07MW3DG5M")
+CLICK_PRODUCT = (By.CSS_SELECTOR, "[data-asin='B07MW3DG5M']")
 ADD_TO_CART = (By.CSS_SELECTOR, "#add-to-cart-button")
 NO_COVERAGE = (By.CSS_SELECTOR, "[aria-labelledby='attachSiNoCoverage-announce']")
 NUM_ITEMS = (By.ID, "sc-subtotal-label-buybox")
